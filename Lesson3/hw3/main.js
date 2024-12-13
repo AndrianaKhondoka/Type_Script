@@ -1,38 +1,32 @@
-let q;
-for (let q = 0; q < 10; q++) {
+let u;
+for (let u = 0; u < 10; u++) {
     document.write('<div>Hello, world!</div>');
 }
 ////////////////////////////////////////////////
-let v;
-for (let v = 0; v < 10; v++) {
-    document.write(`<div>student №${v}</div>`);
+let v1;
+for (let v1 = 0; v1 < 10; v1++) {
+    document.write(`<div>student №${v1}</div>`);
 }
 /////////////////////////////////////////////////
-let w;
-w = 0;
-while (w < 20) {
+let w1 = 0;
+while (w1 < 20) {
     document.write(`<h1>Take care!</h1>`);
-    w++;
+    w1++;
 }
 //////////////////////////////////////////////////////
-let t;
-t = 0;
-while (t < 20) {
-    document.write(`<h1>Take care! ${t}</h1>`);
-    t++;
+let t1 = 0;
+while (t1 < 20) {
+    document.write(`<h1>Take care! ${t1}</h1>`);
+    t1++;
 }
-////////////////////////////////////////////////////
-let listOfItems;
-listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
+let chartOfItems;
+chartOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
 document.write(`<ul>`);
-for (let i = 0; i < listOfItems.length; i++) {
-    document.write(`<li>${listOfItems[i]}</li>`);
+for (let i = 0; i < chartOfItems.length; i++) {
+    document.write(`<li>${chartOfItems[i]}</li>`);
 }
 document.write(`</ul>`);
-///////////////////////////////////////////////
-class Product {
-}
-let products = [
+let foodStuff = [
     {
         title: 'milk',
         price: 22,
@@ -54,17 +48,14 @@ let products = [
         image: 'https://www.myvitaminstore.pk/cdn/shop/files/tapal-green-tea-selection-pack-tea-bags-32-ct-354813.jpg?v=1713783899&width=720'
     },
 ];
-for (const product of products) {
+for (const item of foodStuff) {
     document.write(`
         <div class="product-card">
-            <h3 class="product-title">${product.title}. Price - ${product.price}</h3>
-            <img src="${product.image}" alt="" class="product-image">
+            <h3 class="product-title">${item.title}. Price - ${item.price}</h3>
+            <img src="${item.image}" alt="" class="product-image">
          </div>`);
 }
-/////////////////////////////////////////////////////////////
-class Us {
-}
-let userList = [
+let usersData = [
     { name: 'vasya', age: 31, status: false },
     { name: 'petya', age: 30, status: true },
     { name: 'kolya', age: 29, status: true },
@@ -77,17 +68,17 @@ let userList = [
     { name: 'olya', age: 31, status: false },
     { name: 'max', age: 31, status: true }
 ];
-for (let user of userList) {
+for (let user of usersData) {
     if (user.status) {
         console.log(user);
     }
 }
-for (let user of userList) {
+for (let user of usersData) {
     if (!user.status) {
         console.log(user);
     }
 }
-for (let user of userList) {
+for (let user of usersData) {
     if (user.age > 30) {
         console.log(user);
     }

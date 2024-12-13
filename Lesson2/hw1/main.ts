@@ -20,7 +20,12 @@ function cylinder(h:number, r:number):number {
 }
 cylinder(14, 5);
 
-type User1 = {name: string, username: string, password: string,};
+interface User1{
+    name: string;
+    username: string;
+    password: string;
+}
+
 const usersPoint:User1[] = [
     {name: "Leanne Graham", username: "Bret", password: "Lea1999T"},
     {name: "Ervin Howell", username: "Antonette", password: "1212rS"},
@@ -67,9 +72,8 @@ function listWrite (number:number, txt:string):void {
 }
 listWrite (12, 'Hello!');
 
-type Arr = [string, string, string, string, string, number, number, boolean];
-const listS:Arr = ['Leanne Graham', 'Delphine', 'html', 'привіт', 'капучино', 15, 8, true];
-function items1(listS:Arr):void {
+const listS:Array<string|number|boolean> = ['Leanne Graham', 'Delphine', 'html', 'привіт', 'капучино', 15, 8, true];
+function items1(listS:Array<string|number|boolean>):void {
     document.write(`<ul>`)
     for (const listSElement of listS) {
         document.write(`<li>${listSElement}</li>`)
